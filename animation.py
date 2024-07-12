@@ -31,6 +31,3 @@ class Animation:
             sleep(sleep_time)
             duration -= sleep_time
         print("\r", end="")
-
-animation = Animation()
-animation.loading_animation_bar(5.0, 50)
