@@ -66,7 +66,6 @@ class TextDisplayer:
                 print(f"\033[0K\r{text[0:i]}{parameter_text}", flush=True, end="")
                 parameter_text = chr(ord(parameter_text) + 1)
                 sleep(real_interval)
-        print("\033[0K")
 
     # n秒かけてテキストを表示する.表示前にランダムな文字を出す.(日本語は使えない)
     def printScrambleD(self, text: str, duration: float):
@@ -82,4 +81,3 @@ class TextDisplayer:
                 print(f"\033[0K\r{text[0:i]}{parameter_text}", flush=True, end="")
                 parameter_text = chr(ord(parameter_text) + 1)
                 sleep(real_interval)
-        print("\033[0K")
